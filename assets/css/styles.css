@@ -419,6 +419,79 @@
     background-color: var(--tab-act2);
   }
 
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  .container__videography {
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+.container__videography #video {
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+}
+.container__videography .controls {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.2;
+    transition: opacity 0.4s;
+}
+.container__videography:hover .controls {
+    opacity: 1;
+}
+.container__videography .controls button {
+    background: transparent;
+    color: #fff;
+    font-weight: thin;
+    /* text-shadow: 1px 1px 1px #000; */
+    border: none;
+    cursor: pointer;
+}
+.container__videography .controls .timeline {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.container__videography .controls .timeline .bar{
+    background: rgb(1, 1, 65);
+    height: 4px;
+    flex: 1;
+}
+.container__videography .controls .timeline .bar .inner{
+    background: #ccc;
+    width: 0%;
+    height: 100%;
+}
+.fa {
+    font-size: 20px !important;
+}
+ 
+
   /*=============== PROJECTS ===============*/
   .projects__card {
     position: relative;
@@ -630,7 +703,7 @@
     }
 
     .filters__content {
-      width: 332px;
+      width: 352px;
       margin: 3rem auto;
     }
   }
