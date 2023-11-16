@@ -1,3 +1,18 @@
+/*FROM ALFIAN*/
+document.addEventListener("DOMContentLoaded", function () {
+  //ambil anak pertama
+  const defaultTabContent = document.querySelector("[data-content]:first-child");
+
+  // tamabhin kelas aktif
+  defaultTabContent.classList.add("filters__active");
+
+  // hapus kelas aktif yang lain biar ga muncul diawal
+  const otherTabContents = document.querySelectorAll("[data-content]:not(:first-child)");
+  otherTabContents.forEach((tc) => {
+    tc.classList.remove("filters__active");
+  });
+});
+
 /*=============== FILTERS TABS ===============*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
