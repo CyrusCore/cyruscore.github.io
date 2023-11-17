@@ -22,12 +22,12 @@
     --A: 0.356;
     --first-color: hsl(var(--hue), var(--sat), var(--lig));
     --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
-    --title-color: #000000;
+    --title-color: #ffffff;
     --text-color: #ffffff;
     --text-color-light: hsl(var(--hue), 8%, 75%);
     --text-color-lighten: hsl(var(--hue), 8%, 92%);
     --body-color: hsl(var(--hue), 100%, 99%);
-    --body-color2: #ffbad2;
+    --body-color2: #161616;
     --container-color: #fff;
 
     /*========== Font and typography ==========*/
@@ -126,16 +126,16 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    --glass-color: rgba(170, 169, 170, 0.596);
-    background: #7b3186;
+    --glass-color: #252527;
+    background: #161616;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     /* background-color: var(--body-color); */
     color: var(--text-color);
     --tab-act: (--body-color2);
-    --btn:  rgb(201, 74, 201);
-    --btn-hvr:  rgb(201, 74, 201);
-    --tab-act2: rgb(201, 74, 201);
+    --btn:  #ce1f4d;
+    --btn-hvr:  #ce1f4d;
+    --tab-act2: #ce1f4d;
     transition: .3s; /* For animation dark mode */
   }
 
@@ -190,17 +190,17 @@
 
   /*========== Variables Dark theme ==========*/
   body.dark-theme {
-    background:rgb(57, 33, 58);
+    background:#252527;
     
-    --title-color: hsl(var(--hue), 12%, 95%);
-    --text-color: hsl(var(--hue), 12%, 75%);
+    --title-color: #ffffff;
+    --text-color: #ffffff;
     --body-color: hsl(var(--hue), 40%, 8%);
     --glass-color: rgba(0, 0, 0, 0.356);
     --container-color: hsl(var(--hue), 24%, 12%);
-    --tab-act: var(--body-color);
-    --tab-act2: var(--body-color);
-    --btn: var(--text-color-lighten);
-    --btn-hvr: var(--text-color-light);
+    --tab-act: var(--body-color2);
+    --tab-act2: #ce1f4d;
+    --btn: #ce1f4d;
+    --btn-hvr: #ce1f4d;
     
   }
 
@@ -209,7 +209,7 @@
       the website, in light theme
   ==========*/
   .dark-theme .button__gray {
-    background-color: var(--container-color);
+    background-color: #ce1f4d;
   }
 
   .dark-theme .button__gray:hover {
@@ -217,15 +217,17 @@
   }
 
   .dark-theme .filters__content {
-    background-color: var(--container-color);
+    background-color: #161616;
   }
 
   .dark-theme::-webkit-scrollbar {
-    background-color: hsl(var(--hue), 8%, 16%);
+    background-color: #161616;
+    /* background-color: #252527; */
   }
 
   .dark-theme::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--hue), 8%, 24%);
+    /* background-color: #161616; */
+    background-color: #252527;
   }
 
   .dark-theme::-webkit-scrollbar-thumb:hover {
@@ -392,7 +394,7 @@
   .filters__content {
     margin: 2rem 0 2.5rem;
     /* background-color: var(--text-color-lighten); */
-    background-color: rgb(180, 180, 180);
+    background-color: #252527;
     padding: .375rem;
     border-radius: .75rem;
     display: flex;
@@ -662,11 +664,11 @@
   ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
-    background-color: hsl(var(--hue), 8%, 66%);
+    background-color: #252527;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--hue), 8%, 54%);
+    background-color: #161616;
     border-radius: .5rem;
   }
 
